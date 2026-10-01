@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jiayi Gao | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f6f6;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 70px 20px 55px;
+            border-bottom: 4px solid #cc0033;
+        }
+
+        header h1 {
+            font-size: 44px;
+            margin: 0 0 15px;
+        }
+
+        header p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffb3c5;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            margin: 35px 0;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 28px;
+            border-bottom: 2px solid #cc0033;
+            padding-bottom: 10px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background-color: #f1f1f1;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .project {
+            border-left: 4px solid #cc0033;
+            background-color: #fafafa;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 23px;
+        }
+
+        .location {
+            color: #777;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .project ul {
+            padding-left: 22px;
+        }
+
+        .project li {
+            margin-bottom: 9px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+
+            section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jiayi Gao</h1>
+
+        <p>
+            Rutgers Business School student studying Marketing and Supply Chain Management
+            with interests in international business, marketing, brand management,
+            and global supply chain operations.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#statement">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <main>
+
+        <section id="statement">
+            <h2>Personal Statement</h2>
+
+            <p>
+                Rutgers Business School student studying Marketing and Supply Chain Management
+                with interests in international business, marketing, brand management,
+                and global supply chain operations.
+            </p>
+        </section>
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill">Microsoft Excel</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Data Analysis</div>
+                <div class="skill">Event Planning</div>
+                <div class="skill">Marketing</div>
+                <div class="skill">Supply Chain Management</div>
+                <div class="skill">International Trade</div>
+                <div class="skill">Team Coordination</div>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects & Experience</h2>
+
+
+            <div class="project">
+
+                <h3>Marketing Internship — Aice</h3>
+                <p class="location">Indonesia</p>
+
+                <p>
+                    Executed marketing campaigns and retail operations through promotional
+                    events, on-site coordination, and market research.
+                </p>
+
+                <ul>
+                    <li>
+                        Organized two promotional events that distributed free ice cream
+                        to children to increase brand awareness.
+                    </li>
+
+                    <li>
+                        Coordinated on-site operations at a large festival in Jakarta,
+                        including inventory preparation, restocking, product display setup,
+                        and promoter training.
+                    </li>
+
+                    <li>
+                        Conducted retail market visits in Bali to evaluate product placement,
+                        collect store-level data, prepare reports, and train retail store owners.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Supply Chain Internship</h3>
+                <p class="location">Hangzhou, China</p>
+
+                <p>
+                    Worked in the supply chain department with a focus on export operations
+                    and international trade coordination.
+                </p>
+
+                <ul>
+                    <li>
+                        Managed export-related processes from contract confirmation
+                        through shipment coordination.
+                    </li>
+
+                    <li>
+                        Coordinated trade documentation and communication among freight
+                        forwarders, suppliers, customers, and internal teams.
+                    </li>
+
+                    <li>
+                        Worked with customs procedures, Incoterms, tariffs, and compliance
+                        requirements related to international trade.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Student Event Planning</h3>
+
+                <p>
+                    Planned and coordinated multiple student events, including social,
+                    cultural, and esports activities.
+                </p>
+
+                <ul>
+                    <li>
+                        Planned a New Student Meet-and-Greet in New Jersey, including
+                        the event schedule, activity design, participant organization,
+                        and on-site coordination.
+                    </li>
+
+                    <li>
+                        Organized a three-day Valorant esports tournament for eight teams,
+                        including tournament format, scheduling, staff assignments,
+                        room setup, and event operations.
+                    </li>
+
+                    <li>
+                        Planned a Mid-Autumn Festival networking event, including seating
+                        arrangements, icebreaker activities, event flow, and coordination
+                        with external partners.
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Jiayi Gao | Personal Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
