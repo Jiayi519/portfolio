@@ -45,6 +45,7 @@
             padding: 15px;
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -97,7 +98,7 @@
             border-left: 4px solid #cc0033;
             background-color: #fafafa;
             padding: 25px;
-            margin: 25px 0;
+            margin: 30px 0;
             border-radius: 6px;
         }
 
@@ -121,6 +122,30 @@
             margin-bottom: 9px;
         }
 
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .project-images.single {
+            grid-template-columns: 1fr;
+        }
+
+        .project-images img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project-images.single img {
+            max-width: 650px;
+            margin: auto;
+            display: block;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -140,6 +165,14 @@
 
             section {
                 padding: 25px;
+            }
+
+            .project-images {
+                grid-template-columns: 1fr;
+            }
+
+            .project-images img {
+                height: auto;
             }
         }
     </style>
@@ -201,6 +234,11 @@
                 <h3>Marketing Internship — Aice</h3>
                 <p class="location">Indonesia</p>
 
+                <div class="project-images">
+                    <img src="aice-event.jpg" alt="Aice marketing event in Indonesia">
+                    <img src="aice-operations.jpg" alt="Aice event operations and preparation">
+                </div>
+
                 <p>
                     Executed marketing campaigns and retail operations through promotional
                     events, on-site coordination, and market research.
@@ -229,8 +267,12 @@
 
             <div class="project">
 
-                <h3>Supply Chain Internship</h3>
+                <h3>Supply Chain Internship — H3C</h3>
                 <p class="location">Hangzhou, China</p>
+
+                <div class="project-images single">
+                    <img src="h3c-internship.jpg" alt="H3C supply chain internship">
+                </div>
 
                 <p>
                     Worked in the supply chain department with a focus on export operations
@@ -260,6 +302,10 @@
             <div class="project">
 
                 <h3>Student Event Planning</h3>
+
+                <div class="project-images single">
+                    <img src="mid-autumn-event.jpg" alt="Mid-Autumn Festival student networking event">
+                </div>
 
                 <p>
                     Planned and coordinated multiple student events, including social,
